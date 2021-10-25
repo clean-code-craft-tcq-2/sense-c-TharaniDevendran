@@ -30,5 +30,3 @@ if(setlength == 0)
 
 }
 
-int emailAlertCallCount = 0;
-int ledAlertCallCount = 0;
