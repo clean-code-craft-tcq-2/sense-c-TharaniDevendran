@@ -18,14 +18,13 @@ if(setlength == 0 ||numberset == NULL || numberset == 0)
         s.min=numberset[0];
         s.max=numberset[0];
         s.average = 0;
-        int sum =0;
         for(int i= 0;i<setlength;i++)
         {
-           sum+= numberset[i];
+           s.average += numberset[i];
            if(numberset[i]<s.min) s.min=numberset[i];
            if(numberset[i]>s.max) s.max=numberset[i];
         }
-        s.average=sum/setlength;
+        s.average/=setlength;
     }
      return s;
 
